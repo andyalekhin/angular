@@ -1,0 +1,56 @@
+.education {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.education[open] .education__summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0; 
+        margin-top: -1em;
+    }
+    100% {
+        opacity: 1; 
+        margin-top: 0;
+    }
+}
+
+.education__summary {
+    position: relative;
+    padding: 0.5em 0.5em;
+    font-size: 1.5em;
+    background-color: #4a0072;
+    color: #fff;
+    cursor: pointer;
+}
+
+.education__summary:after {
+    content: '\f19d';
+    font-family: 'fontawesome';
+    position: absolute;
+    right: 1em;
+}
+
+.education__list {
+    margin: 0;
+    color: #fff;
+    background-color: #7b1fa2;
+}
+
+.education__item {
+    margin-bottom: 0.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 1.5em;
+}
+
+.education__descr {
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    font-size: 1.2em;
+    border-bottom: .1em solid #4a0072;
+}

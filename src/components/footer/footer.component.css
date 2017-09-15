@@ -1,11 +1,12 @@
-.header {
+.footer {
     min-width: 320px;
     padding: 1em 0;
     text-align: center;
     background-color: #4a0072;
 }
 
-.header__title {
+.footer__copyright {
     margin: 0;
+    font-size: 1.2em;
     color: #fff;
 }
