@@ -1,0 +1,52 @@
+.contacts {
+    margin-top: 1em;
+}
+
+.contacts[open] .contacts__summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0; 
+        margin-top: -1em;
+    }
+    100% {
+        opacity: 1; 
+        margin-top: 0;
+    }
+}
+
+.contacts__summary {
+    padding: 0.5em 0.5em;
+    font-size: 1.5em;
+    background-color: #4a0072;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contacts__item {
+    text-align: center;
+    background-color: #7b1fa2;
+}
+
+.contacts__link {
+    display: block;
+    padding: 1em 0.6em;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.contacts__link:hover {
+    letter-spacing: 0.1em;
+    background-color: #ae52d4;
+    transition: all 0.3s;
+}
+
