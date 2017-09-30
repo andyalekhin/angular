@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./avatar.component.css']
 })
 
-export class AvatarComponent {}
+export class AvatarComponent {
+  avatarImgUrl = './assets/images/avatar.jpg'
+}
