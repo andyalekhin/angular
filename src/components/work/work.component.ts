@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./work.component.css']
 })
 
-export class WorkComponent {}
+export class WorkComponent {
+  title = 'Work';
+}

@@ -6,4 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacts.component.css']
 })
 
-export class ContactsComponent {}
+export class ContactsComponent {
+  title = 'Social links';
+  mail = 'andy.alekhin@gmail.com';
+  
+  socialLinks = {
+    facebook: 'https://www.facebook.com/profile.php?id=100001507805300',
+    linkedin: 'https://www.linkedin.com/in/andrey-alekhin-b3a371107/',
+    instagram: 'https://www.instagram.com/andy.alekhin/'
+  }
+
+  getMailTo(mail) {
+    return `mailto:${mail}`;
+  }
+}

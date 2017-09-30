@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 
-export class EducationComponent {}
+export class EducationComponent {
+  title = 'Education';
+}
