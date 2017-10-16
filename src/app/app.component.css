@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+/deep/ body {
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    background-color: #2095F3;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+}

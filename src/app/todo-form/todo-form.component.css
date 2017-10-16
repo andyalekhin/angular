@@ -1,0 +1,31 @@
+.todo-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.todo-form__input {
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    outline: none;
+    color: #2196f3;
+    border: 1px solid #2196f3;
+    border-radius: 15px 0 0 15px;
+}
+
+.todo-form__add-btn {
+    display: inline-block;
+    width: 16%;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    outline: none;
+    color: #fff;
+    border: 1px solid #2095F3;
+    border-radius: 0 15px 15px 0;
+    background-color: #2095F3;
+    cursor: pointer;
+}

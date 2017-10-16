@@ -1,0 +1,22 @@
+.todo-item {
+    position: relative;
+    display: block;
+    width: 56%;
+    margin: 15px auto 0;
+    padding: 10px 10px 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    border-bottom: 1px solid #2095F3;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #878787;
+}
+
+.todo-item__delete-btn {
+    position: absolute;
+    right: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
