@@ -1,0 +1,13 @@
+<div class="todo-form">
+    <input type="text"
+        class="todo-form__input"
+        [(ngModel)]="title"
+        placeholder="todo title"><!--
+  --><button 
+        class="todo-form__add-btn"
+        (click)="addTodo(title, description)">Add</button>
+    <textarea 
+        class="todo-form__textarea"
+        [(ngModel)]="description"
+        placeholder="todo description"></textarea>
+</div>

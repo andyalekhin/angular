@@ -1,0 +1,8 @@
+<ul class="todo-list">
+    <li class="todo-item" 
+        *ngFor="let todo of todos"
+        [(class.completed)]="todo.complete">
+        <a class="todo-link"
+            routerLink="todo/{{todo.id}}">{{todo.title}}</a>
+    </li>
+</ul>

@@ -1,26 +1,40 @@
-import { FormsModule } from "@angular/forms";
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from "@angular/forms";
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { TodoFormComponent } from './todo-form/todo-form.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoItemComponent } from './todo-item/todo-item.component';
+import { TodosComponent } from './todos/todos.component';
+import { TodoFormComponent } from './todos/todo-form/todo-form.component';
+import { TodoListComponent } from './todos/todo-list/todo-list.component';
+import { TodoSingleComponent } from './todo-single/todo-single.component';
+import { TodoService } from './todo.service';
+
+const appRoutes: Routes =[
+  { 
+    path: '', 
+    component: TodosComponent
+  },
+  { 
+    path: 'todo/:id', 
+    component: TodoSingleComponent
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
+    TodosComponent,
     TodoFormComponent,
     TodoListComponent,
-    TodoItemComponent
+    TodoSingleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AngularFontAwesomeModule
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 

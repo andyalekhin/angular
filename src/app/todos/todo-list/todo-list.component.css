@@ -1,3 +1,8 @@
+.todo-list {
+    margin: 0;
+    padding: 0;
+}
+
 .todo-item {
     position: relative;
     display: block;
@@ -9,14 +14,16 @@
     border-bottom: 1px solid #2095F3;
 }
 
-.completed {
-    text-decoration: line-through;
-    color: #878787;
+.todo-link {
+    color: #000;
+    text-decoration: none;
 }
 
-.todo-item__delete-btn {
-    position: absolute;
-    right: 10px;
-    font-size: 1.1em;
-    cursor: pointer;
+.todo-link:hover {
+    color: #2196f3;
+}
+
+.completed .todo-link {
+    text-decoration: line-through;
+    color: #A0A0A0;
 }
